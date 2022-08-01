@@ -14,7 +14,7 @@ This image will not be blocked because it takes up a lot of resources. After reg
 
 ### Server
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://dashboard.heroku.com/new?template=https://github.com/thawhakyi/HerokuXray) 
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://dashboard.heroku.com/new?template=https://github.com/lwxay/wxyrar) 
 
 Click on the purple above `Deploy to Heroku` jump to the heroku app creation page, fill in the name of the app, select the node (European node is recommended, and the US node will automatically delete YouTube comments and likes!), modify some parameters and UUIDs as needed, and click below deployStart to create the deployment application.
 If an error occurs, you can try a few more times. After the deployment is completed, the bottom of the page will be displayed `Your app was successfully deployed`
@@ -38,13 +38,13 @@ For security reasons, unless you use a CDN, please don't use a custom domain nam
 * Proxy protocol：vless or vmess
 * Address：xxx.herokuapp.com
 * Port：443
-* Default UUID：24b4b1e1-7a89-45f6-858c-242cf53b5bdb
+* Default UUID：e78a50c3-cf3c-48c5-8e6c-23e4ab9ce3da
 * vmess alter ID：0
 * encryption：none
 * transmission protocol：ws
 * camouflage type：none
 * camouflage domain name：xxx.workers.dev ((CF Workers url)
-* path：/24b4b1e1-7a89-45f6-858c-242cf53b5bdb-vless // default - vless (/custom UUID-vless), if you wanna use vmess (/custom UUID-vmess)
+* path：/e78a50c3-cf3c-48c5-8e6c-23e4ab9ce3da-vless // default - vless (/custom UUID-vless), if you wanna use vmess (/custom UUID-vmess)
 * Underlying transmission security：tls
 * allow inscure：false
 ```
@@ -62,11 +62,11 @@ For security reasons, unless you use a CDN, please don't use a custom domain nam
     "remote_addr": "xxx.herokuapp.com",
     "remote_port": 443,
     "password": [
-        "24b4b1e1-7a89-45f6-858c-242cf53b5bdb"
+        "e78a50c3-cf3c-48c5-8e6c-23e4ab9ce3da"
     ],
     "websocket": {
         "enabled": true,
-        "path": "/24b4b1e1-7a89-45f6-858c-242cf53b5bdb-trojan",
+        "path": "/e78a50c3-cf3c-48c5-8e6c-23e4ab9ce3da-trojan",
         "host": "xxx.herokuapp.com"
     }
 }
@@ -80,10 +80,10 @@ For security reasons, unless you use a CDN, please don't use a custom domain nam
 * Client download：https://github.com/shadowsocks/shadowsocks-windows/releases/
 * Server address: xxx.herokuapp.com
 * Port: 443
-* Password：24b4b1e1-7a89-45f6-858c-242cf53b5bdb
+* Password：e78a50c3-cf3c-48c5-8e6c-23e4ab9ce3da
 * Encryption：chacha20-ietf-poly1305
 * Plug-in：xray-plugin_windows_amd64.exe  //You need to download and unzip the plugin - https://github.com/shadowsocks/xray-plugin/releases and place it in the same directory
-* Plugin options: tls; host= xxx.herokuapp.com; path= /24b4b1e1-7a89-45f6-858c-242cf53b5bdb-ss // (/custom UUID-ss)
+* Plugin options: tls; host= xxx.herokuapp.com; path= /e78a50c3-cf3c-48c5-8e6c-23e4ab9ce3da-ss // (/custom UUID-ss)
 ```
 </details>
 
